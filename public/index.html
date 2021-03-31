@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <link rel="shortcut icon" href="<%= BASE_URL %>logo.png" type="image/png"> <!-- Почему-то путь становится /logo, приходится менять на ./img/logo.[что-то там].png-->
+
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+  <noscript>
+    <strong>
+      Приносим свои извинения, но <%= htmlWebpackPlugin.options.title %>, на котором создан сайт не может работать без включённого JavaScript.
+    </strong>
+  </noscript>
+  <div id="app" class="app"></div>
+</body>
+</html>
