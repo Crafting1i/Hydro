@@ -1,3 +1,4 @@
+/* General styles*/
 :root {
     --link-size: 2.5rem;
 }
@@ -48,7 +49,7 @@ main {
     align-items: flex-end;
     justify-content: space-around;
 }
-/* левая часть, с логотипом*/
+/* Left side, with logo*/
 .preview .left {
     width: 61%;
 }
@@ -57,11 +58,11 @@ main {
     float: right;
     margin-right: 20px;
 }
-/* Правая часть*/
+/* Right side*/
 .preview .right {
     width: 39%;
 }
-/* Кнопки*/
+/* Buttons*/
 a.button {
     padding: .7em 1.5em;
     margin-right: 10px;
@@ -88,7 +89,7 @@ a.has-icon > svg {
     height: 2.5em;
     text-align: left !important;
 }
-/* Изменение для серой кнопки*/
+/* Modifications for gray(github) button*/
 a.git {
     padding-left: 36px !important;
     background: #f6f6f6 !important;
@@ -97,7 +98,7 @@ a.git {
 a.git > svg {
     top: .2em !important;
 }
-/* Скрытие название бота*/
+/* Hidden bot's name*/
 .name {
     display: none;
 }
@@ -130,14 +131,12 @@ a > img, a > svg {
     justify-content: center;
 }
 .page-404 > h1 {
-    margin: 0;
+    margin: -150px 0 0;
     font-size: 20rem;
-    margin-top: -150px;
 }
-.page-404 p {
-    margin: 0;
+.page-404 > p {
+    margin: -120px 0 0;
     font-size: 3.3em;
-    margin-top: -120px;
 }
 .page-404 > a {
     color: #3eaf7c;
@@ -146,11 +145,11 @@ a > img, a > svg {
 .page-404 > a:hover {
     text-decoration: underline;
 } 
-/* Адаптив*/
+/* Adaptivity*/
 @media screen and (max-width: 900px) {
-    /* Для телефонов*/
-    /* Настройка болока с содержимым*/
-    main{
+    /* For phones*/
+    /* Setting of block with content*/
+    main {
         height: 100%
     }
     .inner {
@@ -159,12 +158,12 @@ a > img, a > svg {
         justify-content: center;
         text-align: center;
     }
-    /* Название бота*/
+    /* Bot's name block*/
     .name {
         display: block;
         font-size: 2rem !important;
     }
-    /* Изменение правой части превью*/
+    /* Change of right side of preview*/
     .preview .right {
         text-align: center;
         align-items: center;
@@ -173,7 +172,7 @@ a > img, a > svg {
     .preview .right h1 {
         font-size: 2rem !important;
     }
-    /* Изменение левой части превью*/
+    /* Change of left side of preview*/
     .preview .left {
         display: flex;
         width: 100%;
@@ -183,13 +182,26 @@ a > img, a > svg {
         margin: 0;
         width: 60vw;
     }
-    /* Поправки футера для телефонов*/
+    /* Amendments of footer for phones*/
     .links-list {
         width: 100% !important;
     }
+    /* 404*/
+    .page-404 > h1 {
+        font-size: 50vw;
+        margin: 0;
+    }
+    .page-404 > p {
+        font-size: 8.5vw;
+        margin-top: -2.6em;
+    }
+    .page-404 > a {
+        color: #3eaf7c;
+        font-size: 6vw;
+    }
 }
 @media screen and (max-width: 280px) {
-    /* Поправки для Galaxy Fold*/
+    /* Admendments for Galaxy Fold*/
     .preview .right a {
         font-size: .88em;
     }

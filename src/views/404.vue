@@ -28,14 +28,12 @@ export default {
     justify-content: center;
 }
 .page-404 > h1 {
-    margin: 0;
+    margin: -150px 0 0;
     font-size: 20rem;
-    margin-top: -150px;
 }
-.page-404 p {
-    margin: 0;
+.page-404 > p {
+    margin: -120px 0 0;
     font-size: 3.3em;
-    margin-top: -120px;
 }
 .page-404 > a {
     color: #3eaf7c;
@@ -43,5 +41,19 @@ export default {
 }
 .page-404 > a:hover {
     text-decoration: underline;
-} 
+}
+@media screen and (max-width: 900px) {
+    .page-404 > h1 {
+        font-size: 50vw;
+        margin: 0;
+    }
+    .page-404 > p {
+        font-size: 8.5vw;
+        margin-top: -2.6em;
+    }
+    .page-404 > a {
+        color: #3eaf7c;
+        font-size: 6vw;
+    }
+}
 </style>
