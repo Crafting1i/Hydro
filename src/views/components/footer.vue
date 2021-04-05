@@ -21,8 +21,38 @@
         </div>
     </footer>
 </template>
+
 <script>
 export default {
     name: "footer",
 };
 </script>
+
+<style>
+footer {
+    background: #475050;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    bottom: auto;
+}
+.links-list {
+    margin-top: 15px;
+    text-align: center;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+a > img, a > svg {
+    height: var(--link-size);
+}
+/* Адаптив*/
+@media screen and (max-width: 900px){
+    /* Поправки футера для телефонов*/
+    .links-list {
+        width: 100% !important;
+    }
+}
+</style>

@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <navbar />
-    <mainBlock />
-    <footerBlock />
-  </div>
+    <div>
+        <navbar />
+        <mainBlock />
+        <footerBlock />
+    </div>
 </template>
 
 <script>
@@ -12,12 +12,12 @@ import mainBlock from "./components/main";
 import footerBlock from "./components/footer";
 
 export default {
-  name: "App",
-  components: {
-    navbar,
-    mainBlock,
-    footerBlock
-  },
+    name: "App",
+    components: {
+        navbar,
+        mainBlock,
+        footerBlock
+    },
 };
 </script>
 
@@ -29,171 +29,5 @@ body, html {
     margin: 0;
     padding: 0;
     background: #fff;
-}
-/* Navbar*/
-.navbar {
-    border-bottom: 1px solid #eaecef;
-    width: 100%;
-    line-height: 2.2rem;
-    padding: .7rem 1.5rem;
-    vertical-align: middle;
-    box-sizing: border-box;
-    pointer-events: none;
-    background: white;
-    position: fixed;
-    z-index: 20;
-    top: 0;
-}
-.navbar > .logo {
-    width: 2.3rem;
-    height: 2.3rem;
-    margin-right: 8px;
-    vertical-align: bottom;
-}
-.navbar > h1 {
-    display: inline-block;
-    font-size: 1.5rem;
-    font-weight: 600;
-    position: relative;
-    vertical-align: middle;
-}
-/* Preview*/
-main {
-    flex: 1 0 auto;
-    height: calc(100vh - 124.9px);
-}
-.preview {
-    padding: 100px 30px 40px;
-    width: 100%;
-}
-.inner {
-    max-width: 1260px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-}
-/* левая часть, с логотипом*/
-.preview .left {
-    width: 61%;
-}
-.preview .left > img {
-    height: 80%;
-    float: right;
-    margin-right: 20px;
-}
-/* Правая часть*/
-.preview .right {
-    width: 39%;
-}
-/* Кнопки*/
-a.button {
-    padding: .7em 1.5em;
-    margin-right: 10px;
-    background: #4fc08d;
-    width: -webkit-fit-content;
-    display: inline-block;
-    border-radius: 100px;
-    color: white;
-    font-family: Inter,Roboto,Oxygen,Fira Sans,Helvetica Neue,sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    padding: 0.75em 2em;
-    margin: 10px 10px 10px 5px;
-}
-a.has-icon {
-    position: relative;
-    text-indent: 1.3em;
-}
-a.has-icon > svg {
-    position: absolute;
-    left: .4em;
-    top: .5em;
-    width: 2.5em;
-    height: 2.5em;
-    text-align: left !important;
-}
-/* Изменение для серой кнопки*/
-a.git {
-    padding-left: 36px !important;
-    background: #f6f6f6 !important;
-    color: #6a5959 !important;
-}
-a.git > svg {
-    top: .2em !important;
-}
-/* Скрытие название бота*/
-.name {
-    display: none;
-}
-/* Footer*/
-footer {
-    background: #475050;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    bottom: auto;
-}
-.links-list {
-    margin-top: 15px;
-    text-align: center;
-    width: 20%;
-    display: flex;
-    justify-content: space-around;
-}
-a > img, a > svg {
-    height: var(--link-size);
-}
-/* Адаптив*/
-@media screen and (max-width: 900px) {
-    /* Для телефонов*/
-    /* Настройка болока с содержимым*/
-    main{
-        height: 100%
-    }
-    .inner {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-    /* Название бота*/
-    .name {
-        display: block;
-        font-size: 2rem !important;
-    }
-    /* Изменение правой части превью*/
-    .preview .right {
-        text-align: center;
-        align-items: center;
-        width: 100%;
-    }
-    .preview .right h1 {
-        font-size: 2rem !important;
-    }
-    /* Изменение левой части превью*/
-    .preview .left {
-        display: flex;
-        width: 100%;
-        place-content: center;
-    }
-    .preview .left > img {
-        margin: 0;
-        width: 60vw;
-    }
-    /* Поправки футера для телефонов*/
-    .links-list {
-        width: 100% !important;
-    }
-}
-@media screen and (max-width: 280px) {
-    /* Поправки для Galaxy Fold*/
-    .preview .right a {
-        font-size: .88em;
-    }
-    .preview .right > h1 {
-        font-size: 1.7rem !important;
-    }
 }
 </style>
