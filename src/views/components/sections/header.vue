@@ -38,9 +38,15 @@ export default {
 </script>
 
 <style>
+header {
+    height: 100vh;
+}
 .preview {
     padding: 100px 30px 40px;
     width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
 }
 .inner {
     max-width: 1260px;
