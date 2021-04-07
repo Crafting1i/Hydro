@@ -37,6 +37,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     bottom: auto;
+    z-index: 10;
 }
 .links-list {
     margin-top: 15px;
