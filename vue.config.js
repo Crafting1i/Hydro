@@ -1,6 +1,5 @@
 module.exports = {
     publicPath: '/',
-    outputDir: 'production',
     lintOnSave: (process.env.NODE_ENV !== 'production') ? true : false,
     pages: {
         index: {
