@@ -33,7 +33,8 @@
 
 <script>
 export default {
-    name: "header"
+    name: "header",
+    
 }
 </script>
 
@@ -44,7 +45,7 @@ header {
 .preview {
     padding: 100px 30px 40px;
     width: 100%;
-    position: fixed;
+    position: relative;
     z-index: 1;
     top: 0;
 }

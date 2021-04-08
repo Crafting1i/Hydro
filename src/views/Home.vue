@@ -1,8 +1,8 @@
 <template>
     <div>
         <navbar />
-        <mainBlock />
-        <footerBlock />
+        <main-block />
+        <footer-block />
     </div>
 </template>
 
@@ -17,7 +17,7 @@ export default {
         navbar,
         mainBlock,
         footerBlock
-    },
+    }
 };
 </script>
 

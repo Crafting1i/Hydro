@@ -33,7 +33,7 @@ export default {
 }
 </script>
 
-<style scouped>
+<style>
 .content {
     padding: 50px 30px 40px;
     margin-top: 100vh;
