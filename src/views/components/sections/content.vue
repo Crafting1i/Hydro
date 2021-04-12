@@ -36,7 +36,7 @@ export default {
 <style>
 .content {
     padding: 50px 30px 40px;
-    margin-top: 100vh;
+    margin: 100vh 0 20vw;
     z-index: 10;
     position: relative;
     background: white;
